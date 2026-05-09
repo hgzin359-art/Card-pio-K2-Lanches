@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 Lanches - Cardápio Digital</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">K2 Lanches</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Início</a></li>
+                <li><a href="#lanches" class="nav-link" data-section="lanches">Lanches</a></li>
+                <li><a href="#porcoes" class="nav-link" data-section="porcoes">Porções</a></li>
+                <li><a href="#bebidas" class="nav-link" data-section="bebidas">Bebidas</a></li>
+                <li><a href="#sobremesa" class="nav-link" data-section="sobremesa">Sobremesa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Seção Home -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <img src="src/assets/images/hero.png" alt="K2 Lanches" class="hero-image">
+                <div class="hero-content">
+                    <h1 class="hero-title">K2 Lanches</h1>
+                    <p class="hero-subtitle">Os Melhores Lanches de Laurentino</p>
+                    <div class="hero-info">
+                        <p><strong>📍</strong> Rua 1º de Maio, 111 - Centro - Laurentino</p>
+                        <p><strong>📞</strong> (47) 98834-5687</p>
+                        <p><strong>🕐</strong> Aberto Terça a Domingo</p>
+                    </div>
+                    <button class="cta-button" onclick="scrollToSection('lanches')">Ver Cardápio</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Lanches -->
+        <section id="lanches" class="section">
+            <div class="section-header">
+                <h2>Lanches</h2>
+                <p>Deliciosos lanches preparados com ingredientes frescos</p>
+            </div>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X da Casa</h3>
+                        <p class="item-description">Pão, coração, frango, alcatra, queijo, palmito, alface, tomate e pepino (com fritas)</p>
+                        <p class="item-price">R$ 56,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Gigante</h3>
+                        <p class="item-description">Pão, hambúrguer, frango, coração, calabresa, bacon, ovo, salsicha, queijo, presunto, tomate, pepino, alface, milho e ervilha (com fritas)</p>
+                        <p class="item-price">R$ 50,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X K2</h3>
+                        <p class="item-description">Pão, hambúrguer, frango, bacon, salsicha, ovo, presunto, queijo, tomate, pepino, milho, ervilha e alface</p>
+                        <p class="item-price">R$ 32,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X K2 Especial</h3>
+                        <p class="item-description">Pão, hambúrguer, frango, bacon, salsicha, ovo, presunto, queijo, tomate, pepino, milho, ervilha e alface (com fritas)</p>
+                        <p class="item-price">R$ 45,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>Cebolitos</h3>
+                        <p class="item-description">Pão, hambúrguer, calabresa, queijo, presunto, cebola, tomate, pepino, milho, ervilha e alface</p>
+                        <p class="item-price">R$ 25,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Alcatra</h3>
+                        <p class="item-description">Pão, alcatra, queijo, presunto, tomate, pepino, milho e ervilha</p>
+                        <p class="item-price">R$ 36,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Alcatra Especial</h3>
+                        <p class="item-description">Pão, alcatra, calabresa, cebola, queijo, tomate, pepino, milho, ervilha e alface (com fritas)</p>
+                        <p class="item-price">R$ 60,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Galinha</h3>
+                        <p class="item-description">Pão, peito de frango, tomate, pepino, queijo, ervilha e milho</p>
+                        <p class="item-price">R$ 25,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Coração</h3>
+                        <p class="item-description">Pão, coração, queijo, tomate, pepino, milho e ervilha</p>
+                        <p class="item-price">R$ 28,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Bacon</h3>
+                        <p class="item-description">Pão, hambúrguer, bacon, queijo, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Egg Especial</h3>
+                        <p class="item-description">Pão, hambúrguer, salsicha, ovo, presunto, tomate, alface, pepino, milho e ervilha</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Calabresa</h3>
+                        <p class="item-description">Pão, hambúrguer, calabresa, queijo, presunto, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Especial</h3>
+                        <p class="item-description">Pão, hambúrguer, salsicha, queijo, presunto, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Egg</h3>
+                        <p class="item-description">Pão, hambúrguer, ovo, queijo, presunto, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Salada</h3>
+                        <p class="item-description">Pão, hambúrguer, queijo, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 19,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Dog</h3>
+                        <p class="item-description">Pão, salsicha, queijo, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 19,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Dog c/ Bacon e Cheddar</h3>
+                        <p class="item-description">Pão, salsicha, queijo, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 30,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Dog Prensado c/ Calabresa</h3>
+                        <p class="item-description">Pão, salsicha, queijo, tomate, pepino, alface, milho e ervilha</p>
+                        <p class="item-price">R$ 24,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>Bauru</h3>
+                        <p class="item-description">3 fatias de pão pullman, presunto, queijo e tomate</p>
+                        <p class="item-price">R$ 16,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Burguer</h3>
+                        <p class="item-description">Pão, hambúrguer, queijo, presunto, milho e ervilha</p>
+                        <p class="item-price">R$ 17,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Burguer c/ Calabresa</h3>
+                        <p class="item-description">Pão, hambúrguer, calabresa, queijo, presunto, milho e ervilha</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Burguer c/ Bacon</h3>
+                        <p class="item-description">Pão, hambúrguer, bacon, queijo, presunto, milho e ervilha</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Rafael</h3>
+                        <p class="item-description">Pão, hambúrguer, salsicha, presunto, queijo e palmito</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Dadi</h3>
+                        <p class="item-description">Pão, hambúrguer, calabresa, salsicha e queijo</p>
+                        <p class="item-price">R$ 22,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Light</h3>
+                        <p class="item-description">Pão pullman, frango e queijo</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>Misto Quente</h3>
+                        <p class="item-description">3 fatias de pão pullman, presunto e queijo</p>
+                        <p class="item-price">R$ 13,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>Hambúrguer</h3>
+                        <p class="item-description">Pão, hambúrguer e queijo</p>
+                        <p class="item-price">R$ 15,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Duplo Cheddar</h3>
+                        <p class="item-description">2 hambúrgueres, fatias de bacon, tomate, pepino, anéis de cebola, cheddar ou catupiry</p>
+                        <p class="item-price">R$ 29,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Frango c/ Alcatra Cremoso</h3>
+                        <p class="item-description">Pão de X, alcatra, frango, tomate, pepino, cheddar ou catupiry</p>
+                        <p class="item-price">R$ 38,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Costela</h3>
+                        <p class="item-description">Pão de X, hambúrguer de costela 180g, cebola, tomate, pepino, alface no prato com onions e batatas rústicas</p>
+                        <p class="item-price">R$ 40,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Dog Turbinado</h3>
+                        <p class="item-description">Pão, salsicha, ovo, bacon, frango, alcatra, queijo, presunto, tomate, milho e ervilha</p>
+                        <p class="item-price">R$ 38,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ff6b35, #f7931e);"></div>
+                    <div class="item-content">
+                        <h3>X Nuggets</h3>
+                        <p class="item-description">Pão, X hambúrguer com frango empanado com queijo cheddar ou catupiry, tomate, pepino e alface</p>
+                        <p class="item-price">R$ 28,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Porções -->
+        <section id="porcoes" class="section">
+            <div class="section-header">
+                <h2>Porções</h2>
+                <p>Deliciosas porções para compartilhar ou aproveitar sozinho</p>
+            </div>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Alcatra na Chapa</h3>
+                        <p class="item-description">Saladas, fritas, pão torrado, polenta (2 pessoas)</p>
+                        <p class="item-price">R$ 110,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Alcatra c/ Coração na Chapa</h3>
+                        <p class="item-description">Salada, fritas, pão torrado, polenta (2 pessoas)</p>
+                        <p class="item-price">R$ 125,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Alcatra com Fritas</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 90,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Frios</h3>
+                        <p class="item-description">Queijo, azeitona, salame, palmito e pepino. Pequena: R$ 45,00 | Grande: R$ 50,00</p>
+                        <p class="item-price">A partir de R$ 45,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Fritas</h3>
+                        <p class="item-description">Pequena: R$ 24,00 | Grande: R$ 28,00</p>
+                        <p class="item-price">A partir de R$ 24,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Onions com Bolinhas de Purê</h3>
+                        <p class="item-description">Crocante e calabresa. Grande</p>
+                        <p class="item-price">R$ 48,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Risóles de Frango</h3>
+                        <p class="item-description">18 unidades. Grande</p>
+                        <p class="item-price">R$ 37,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>A Passarinho</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 47,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>A Passarinho com Polenta Frita</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 62,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Polenta Frita</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 28,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Coração, Frango e Calabresa</h3>
+                        <p class="item-description">Com pão torrado. Grande</p>
+                        <p class="item-price">R$ 65,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Coração com Fritas</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 63,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Frango com Fritas</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 60,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Mandioquinha com Bacon e Calabresa</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 48,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Polenta com Bacon e Calabresa</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 45,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção K2</h3>
+                        <p class="item-description">Frango, coração, alcatra com fritas, palmito, pepino e ovo de codorna. Pequena: R$ 90,00 | Grande: R$ 110,00</p>
+                        <p class="item-price">A partir de R$ 90,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Fritas com Bacon, Calabresa e Queijo</h3>
+                        <p class="item-description">Cheddar ou Catupiry. Grande</p>
+                        <p class="item-price">R$ 45,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção da Casa</h3>
+                        <p class="item-description">Salada, alcatra, coração, frango à milanesa, fritas, bolinhas de purê, onions, risoles de frango, isca de peixe e bacon</p>
+                        <p class="item-price">R$ 205,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Alcatra com Batatas Rústicas e Onions</h3>
+                        <p class="item-description">Grande</p>
+                        <p class="item-price">R$ 110,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Bolinho de Peixe</h3>
+                        <p class="item-description">Delicioso</p>
+                        <p class="item-price">R$ 45,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção de Frutos do Mar</h3>
+                        <p class="item-description">Alcatra, peixe, camarão, fritas, palmito, pepino e ovo de codorna</p>
+                        <p class="item-price">R$ 175,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção K2 Especial</h3>
+                        <p class="item-description">Camarão, bolinho de siri, filé de tilápia, polenta, mandioquinha, palmito, pepino e ovo de codorna</p>
+                        <p class="item-price">R$ 175,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Filé de Tilápia</h3>
+                        <p class="item-description">Fresco e saboroso</p>
+                        <p class="item-price">R$ 47,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Filé de Tilápia com Fritas e Polenta</h3>
+                        <p class="item-description">Combinação perfeita</p>
+                        <p class="item-price">R$ 70,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Filé de Tilápia com Rústica e Onions</h3>
+                        <p class="item-description">Delicioso</p>
+                        <p class="item-price">R$ 75,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Camarão no Palito</h3>
+                        <p class="item-description">Aperitivo delicioso</p>
+                        <p class="item-price">R$ 25,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção de Camarão</h3>
+                        <p class="item-description">Fresco e suculento</p>
+                        <p class="item-price">R$ 85,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Porção de Camarão c/ Fritas, Polenta ou Mandioquinha</h3>
+                        <p class="item-description">Escolha o acompanhamento</p>
+                        <p class="item-price">R$ 110,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Camarão, Filé de Tilápia e Fritas</h3>
+                        <p class="item-description">O melhor dos dois mundos</p>
+                        <p class="item-price">R$ 145,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #f7931e, #ff6b35);"></div>
+                    <div class="item-content">
+                        <h3>Bolinho de Siri</h3>
+                        <p class="item-description">Delicioso aperitivo</p>
+                        <p class="item-price">R$ 45,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Bebidas -->
+        <section id="bebidas" class="section">
+            <div class="section-header">
+                <h2>Bebidas</h2>
+                <p>Refrescantes bebidas para acompanhar seu pedido</p>
+            </div>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Sucos Naturais</h3>
+                        <p class="item-description">Abacaxi, Abacaxi c/ Hortelã, Acerola, Açaí, Côco, Laranja, Manga, Maracujá, Morango, Uva</p>
+                        <p class="item-price">R$ 9,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Sucos c/ Leite Condensado</h3>
+                        <p class="item-description">Cremosos e deliciosos</p>
+                        <p class="item-price">R$ 12,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Vitaminas</h3>
+                        <p class="item-description">Nutritivas e saborosas</p>
+                        <p class="item-price">R$ 12,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Limonada Suíça (Jarra)</h3>
+                        <p class="item-description">Refrescante</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Laranja c/ Acerola (Jarra)</h3>
+                        <p class="item-description">Vitamina C pura</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Abacaxi c/ Côco (Jarra)</h3>
+                        <p class="item-description">Tropical</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Abacaxi c/ Hortelã (Jarra)</h3>
+                        <p class="item-description">Refrescante</p>
+                        <p class="item-price">R$ 23,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Refrigerante Lata</h3>
+                        <p class="item-description">Variados</p>
+                        <p class="item-price">R$ 7,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Refrigerante 600ml</h3>
+                        <p class="item-description">Variados</p>
+                        <p class="item-price">R$ 9,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Coca-Cola 1L</h3>
+                        <p class="item-description">Clássica</p>
+                        <p class="item-price">R$ 11,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Coca-Cola 2L</h3>
+                        <p class="item-description">Clássica</p>
+                        <p class="item-price">R$ 15,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Guaraná, Pepsi, Sukita e Soda 2L</h3>
+                        <p class="item-description">Variados</p>
+                        <p class="item-price">R$ 15,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Redbull</h3>
+                        <p class="item-description">Energético</p>
+                        <p class="item-price">R$ 13,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                    <div class="item-content">
+                        <h3>Água</h3>
+                        <p class="item-description">Com ou sem gás</p>
+                        <p class="item-price">R$ 4,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Brahma Lata</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 7,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Skol Lata</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 6,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Liber Long Neck</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 7,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Malzbier Long Neck</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 9,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Budweiser Long Neck</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 9,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Stella Artois Long Neck</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 9,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Heineken 600ml</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 18,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Brahma 600ml</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 13,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Original 600ml</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 15,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Skol 600ml</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 13,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Budweiser Litrão</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 18,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Brahma Litrão</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 17,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Amistel 600ml</h3>
+                        <p class="item-description">Cerveja gelada</p>
+                        <p class="item-price">R$ 10,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp 400ml</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 12,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp 600ml</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 15,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp Vinho 400ml</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 14,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp Vinho 600ml</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 18,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp Torre 1L</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 30,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #c41e3a, #ff1744);"></div>
+                    <div class="item-content">
+                        <h3>Chopp Torre 2,5L</h3>
+                        <p class="item-description">Gelado na hora</p>
+                        <p class="item-price">R$ 68,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobremesa -->
+        <section id="sobremesa" class="section">
+            <div class="section-header">
+                <h2>Sobremesa</h2>
+                <p>Doces delícias para finalizar sua refeição</p>
+            </div>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #8b4513, #d2691e);"></div>
+                    <div class="item-content">
+                        <h3>Petit Gateau</h3>
+                        <p class="item-description">Bolo de chocolate quente com sorvete</p>
+                        <p class="item-price">R$ 25,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #8b4513, #d2691e);"></div>
+                    <div class="item-content">
+                        <h3>Sorvete na Taça</h3>
+                        <p class="item-description">Refrescante e saboroso</p>
+                        <p class="item-price">R$ 27,00</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image" style="background: linear-gradient(135deg, #8b4513, #d2691e);"></div>
+                    <div class="item-content">
+                        <h3>Açaí na Taça</h3>
+                        <p class="item-description">Energético e delicioso</p>
+                        <p class="item-price">R$ 27,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>K2 Lanches</h4>
+                <p>Os Melhores Lanches de Laurentino</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📍 Rua 1º de Maio, 111 - Centro - Laurentino</p>
+                <p>📞 (47) 98834-5687</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <p>Instagram: @k2lanche</p>
+                <p>Facebook: @K2lanchesdelaurentino</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horário</h4>
+                <p>Aberto Terça a Domingo</p>
+                <p>Disk Entrega Quarta a Domingo</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 K2 Lanches. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/styles/script.js"></script>
+</body>
+</html>
