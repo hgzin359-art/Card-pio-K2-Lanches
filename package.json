@@ -1,0 +1,32 @@
+{
+  "name": "k2-lanches-menu",
+  "version": "1.0.0",
+  "description": "Cardápio digital moderno e responsivo para K2 Lanches",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "cardápio",
+    "lanchonete",
+    "web",
+    "responsive",
+    "k2-lanches"
+  ],
+  "author": "K2 Lanches",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/k2-lanches-menu.git"
+  },
+  "homepage": "https://github.com/seu-usuario/k2-lanches-menu#readme",
+  "technologies": [
+    "HTML5",
+    "CSS3",
+    "JavaScript (Vanilla)",
+    "Responsive Design",
+    "CSS Grid",
+    "CSS Flexbox"
+  ]
+}
